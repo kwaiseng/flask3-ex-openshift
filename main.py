@@ -3,7 +3,7 @@ from flask_bootstrap import Bootstrap
 from flask import Flask, render_template, redirect, url_for, request, flash
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, login_required, login_user, logout_user, current_user, UserMixin
-from config import S3_BUCKET, S3_KEY, S3_SECRET, SECRET_KEY, SQL_Host, SQL_User, SQL_Password, URI
+from config import S3_BUCKET, S3_KEY, S3_SECRET, SECRET_KEY, SQL_Host, SQL_User, SQL_Password, URI, FLASK_RUN_PORT
 from filters import datetimeformat, file_type
 from werkzeug.security import generate_password_hash, check_password_hash
 import boto3
