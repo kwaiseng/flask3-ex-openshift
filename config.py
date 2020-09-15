@@ -9,5 +9,5 @@ SQL_Host   = os.environ.get("SQL_Host")
 SQL_User = os.environ.get("SQL_User")
 SQL_Password = os.environ.get("SQL_Password")
 DB = os.environ.get("DB")
-
+FLASK_RUN_PORT=os.environ.get("FLASK_RUN_PORT")
 URI = 'mysql://' + SQL_User +':'+ SQL_Password +'@' + SQL_Host + '/' + DB

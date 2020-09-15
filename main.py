@@ -54,13 +54,6 @@ def load_user(user_id):
 
 main = Blueprint('main', __name__)
 
-
-#app.register_blueprint(s3_blueprint)
-
-#app.register_blueprint(auth_blueprint)
-
-#app.register_blueprint(main)
-
 @app.route('/')
 def index():
        return render_template('index.html')
@@ -202,7 +195,7 @@ def upload_post():
     return redirect(url_for('upload'))
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8080)
+    app.run(host='0.0.0.0', port=FLASK_RUN_PORT)
 
 
 def create_app():
