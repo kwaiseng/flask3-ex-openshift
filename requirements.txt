@@ -1,0 +1,10 @@
+gunicorn
+flask 
+flask-sqlalchemy
+flask-login
+filters
+Frozen-Flask
+flask-bootstrap
+boto3
+arrow
+uuid
