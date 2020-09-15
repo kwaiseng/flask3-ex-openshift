@@ -195,8 +195,8 @@ def upload_post():
     return redirect(url_for('upload'))
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port = FLASK_RUN_PORT)
-
+    app.run()
+    
 
 def create_app():
     app = Flask(__name__)
